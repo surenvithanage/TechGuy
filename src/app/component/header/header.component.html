@@ -1,0 +1,42 @@
+<header>
+  <div class="overlay"></div>
+  <!-- NAVIGATION BAR -->
+  <div class="container-fluid" style="margin : 0px; padding: 0px;">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark black scrolling-navbar" style="position: relative; width: 100%;">
+      <a class="navbar-brand" href="#"><strong>TechGuy</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto" *ngFor="let page of pages">
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Main Navigation-->
+  </div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">Welcome To TechGuy</h1>
+      </div>
+    </div>
+  </div>
+</header>
