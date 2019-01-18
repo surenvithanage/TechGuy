@@ -2,7 +2,7 @@
   <div class="overlay"></div>
   <!-- NAVIGATION BAR -->
   <div class="container-fluid" style="margin : 0px; padding: 0px;">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark black scrolling-navbar" style="position: relative; width: 100%;">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark  scrolling-navbar" style="position: relative; width: 100%;">
       <a class="navbar-brand" href="#"><strong>TechGuy</strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,11 +20,31 @@
             <a class="nav-link"><i class="fa fa-instagram"></i></a>
           </li>
         </ul>
-        <ul class="navbar-nav mr-auto" *ngFor="let page of pages">
+        <ul class="navbar-nav mr-auto" style="margin-left: 50px;">
           <li class="nav-item">
-            <a class="nav-link" href="#"></a>
+            <a class="nav-link" href="#">Page 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page 3</a>
           </li>
         </ul>
+        <span class="pull-right">
+          <div class="btn-group dropleft">
+            <i class="dropdown-toggle" style="color: blanchedalmond;" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fa fa-user fa-lg"></i>
+            </i>
+            <div class="dropdown-menu credentials">
+              <a class="dropdown-item" href="#"><i class="fa fa-lock" style="margin-right : 25px;"></i>Login</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-lock" style="margin-right : 25px;"></i>Register</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="fa fa-message"></i>Free Job Posting</a>
+            </div>
+          </div>
+        </span>
       </div>
     </nav>
     <!--Main Navigation-->
@@ -32,11 +52,64 @@
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
     <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
   </video>
-  <div class="container h-100">
-    <div class="d-flex h-100 text-center align-items-center">
-      <div class="w-100 text-white">
-        <h1 class="display-3">Welcome To TechGuy</h1>
+  <div class="container">
+    <!-- Search Bar-->
+    <section class="search-banner text-white py-3 form-arka-plan" id="search-banner">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-4" style="margin-right : 50px;">
+            <div class="row py-5">
+              <h3 style="color : #2bbbad;">Find out what you like doing best, and get someone to pay you for doing it.</h3>
+              <span style="margin-top : 20px;" class="font-weight-dark"><h3>We will help you to find the Perfect Job</h3></span>
+            </div>
+            <div class="row">
+              <span class="btn btn-success" style="font-size: 17px;">POST FREE JOBS</span>
+            </div>
+          </div>
+          <div class="col-md-7 col-md-offset-1" style="margin-top: 50px; margin-left: 35px;">
+            <div class="card acik-renk-form">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group ">
+                      <select id="iller" class="form-control">
+                        <option selected>Search List</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group ">
+                      <select id="ilceler" class="form-control">
+                        <option selected>Search List</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group ">
+                      <select id="arac-turu" class="form-control">
+                        <option selected>Search List</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="font-weight-light text-dark"><b>Search TechGuy Categories</b></h4>
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="form-group ">
+                      <input type="text" class="form-control" placeholder="Search Category">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <button type="button" class="btn btn-warning ">Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+    <!-- End Of Search Bar -->
   </div>
 </header>

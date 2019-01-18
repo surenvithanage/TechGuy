@@ -46,3 +46,20 @@ header {
       display: none;
     }
   }
+
+  .credentials a:hover { 
+    background-color: #2bbbad;
+  }
+
+  .firma-ara{
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.acik-renk-form{
+    background: rgba(255, 255, 255, 0.58);
+}
+.siyah-cerceve{
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
